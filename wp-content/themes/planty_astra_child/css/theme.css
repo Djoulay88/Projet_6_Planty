@@ -1,0 +1,613 @@
+/* Import de la font Syne depuis Google Fonts et application globale */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+/* Styles globaux */
+body * {
+    font-family: 'syne', sans-serif;
+}
+
+/* Réinitialisation des marges pour les éléments enfants directs du corps */
+:where(body .is-layout-flow) > * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Styles du menu principal */
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    position: relative;
+    gap: 61.5px;
+}
+
+/* Réglages spécifiques du menu */
+.ast-builder-menu-1, .site-header-section > div:last-child  {
+    padding: 0;
+}
+
+.ast-builder-menu-1 .menu-item > .menu-link, header li {
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 0px;
+}
+
+.ast-builder-grid-row > .site-header-section {
+    flex-wrap: nowrap;
+    gap: 61.5px;
+}
+
+/* Styles généraux pour la page */
+main {
+    width: 100%;
+}
+
+/* Conteneur global avec une largeur maximale */
+.ast-container {
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Réglages spécifiques pour la mise en page des blocs d'entrée */
+.entry-content[ast-blocks-layout] > * {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles pour la section des témoignages */
+.ast-separate-container .ast-article-single:not(.ast-related-post) {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* Styles pour la section des témoignages */
+.opinions-container {
+    margin-bottom: -5px;
+}
+
+.accueil_container_opinions {
+    max-width: 1174px;
+    justify-items: center;
+    margin: auto;
+    padding-left: 30px;
+}
+
+/* Styles pour les vignettes d'opinions */
+.opinions-text {
+    padding-right: 43px;
+}
+
+.marc {
+    width: 80%;
+}
+
+/* Styles pour la section d'énergie */
+.energy-container {
+    max-width: 497px;
+    margin: 0 auto 30px auto;
+}
+
+/* Styles pour la section de goût */
+.taste-container {
+    max-width: 548px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+/* Styles pour le conteneur de vignettes */
+.vignettes_container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    gap: 15px;
+}
+
+/* Styles pour la bannière du pied de page */
+.footer-banner img {
+    min-width: 320px;
+    margin-top: -5px;
+}
+
+/* Styles pour les articles individuels */
+.ast-article-single {
+    max-width: 1440px;
+    padding-bottom: 0;
+}
+
+/* Styles pour la section "Rencontrez-nous" */
+.meet_us_text_container {
+    max-width: 680px;
+}
+
+/* Styles pour le conteneur des colonnes "Rencontrez-nous" */
+.meet_us_columns_container {
+    justify-content: center;
+    padding-top: 70px;
+}
+
+/* Styles pour le conteneur des bannières de commande */
+.banner-commande-columns {
+    margin: 0px auto;
+    gap: 0;
+    padding: 0;
+}
+
+/* Styles pour la bannière de commande */
+.banner-commande {
+    max-width: 860px;
+    margin-bottom: 0;
+}
+
+
+/* Styles pour la position de l'équipe */
+.team-banner-position {
+    position: relative;
+    top: 130px;
+}
+
+/* Styles pour le titre de l'équipe */
+.team-banner h4 {
+    padding-bottom: 0;
+    padding: 0 0 20px 0;
+}
+
+/* Styles pour le conteneur de l'équipe */
+.team-container {
+    width: 63%;
+    margin: auto;
+}
+
+/* Styles pour la position des membres de l'équipe */
+.position-branch-team {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0px;
+    padding-right: 60px;
+}
+
+
+/* Styles pour le conteneur des vignettes de commande */
+.vignettes_container_commande {
+    display: flex;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Styles pour le conteneur du nombre de fruits */
+.nombre-fruit-container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+/* Styles pour les boutons du nombre de fruits */
+.fruit-number-button {
+    width: auto;
+    padding: 0;
+    width: 100px;
+}
+
+/* Styles pour le formulaire de contact */
+.form-contact-us div {
+    height: 700px;
+}
+
+/* Styles pour la ligne de séparation */
+hr {
+    margin: 20px auto;
+    height: 2.0px;
+    background-color: #fff;
+}
+
+/* Styles pour les champs de texte et de courriel */
+input[type="text"],
+input[type="email"] {
+    height: 71px;
+    margin: 4px 0;
+    background-color: #fff;
+}
+
+/* Styles pour les champs de texte, de courriel et de zone de texte */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #fff;
+    color: #000;
+    max-height: 237px;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.16));
+    border-radius: 7px;
+    justify-items: center;
+}
+
+/* Styles pour le bouton de soumission du formulaire */
+input[type="submit"] {
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+    height: 56px;
+}
+
+/* Styles pour le bouton de soumission du formulaire Contact Form 7 */
+.wpcf7 .submit-contact-us {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    position: relative;
+    bottom: 150px;
+    width: 198px;
+    height: 56px;
+}
+
+/* Styles pour l'étiquette du formulaire Contact Form 7 */
+.wpcf7 .label-contact-us p {
+    margin-top: 10px;
+    max-height: 380px;
+}
+
+/* Styles pour le conteneur de formulaire Contact Form 7 */
+.wpcf7 .label-contact-us {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+/* Styles pour la feuille de houx dans le formulaire Contact Form 7 */
+.wpcf7 .holly-leaf {
+    position: relative;
+    left: -88px;
+    bottom: 125px;
+    z-index: -1;
+}
+
+/* Styles pour les champs de nombre dans le formulaire Contact Form 7 */
+.wpcf7 input[type="number"] {
+    width: 51px;
+    font-weight: 400;
+    text-align: center;
+    height: 56px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+}
+
+/* Styles pour le conteneur du formulaire */
+.form_style {
+    position: relative;
+    z-index: 2;
+}
+
+/* Styles pour le formulaire, les informations et la livraison */
+.form_style form, .info, .delivery {
+    margin: auto;
+    max-width: 383px;
+}
+
+/* Styles pour le conteneur d'informations de livraison */
+.info-delivery {
+    display: flex;
+    padding-bottom: 15px;
+    width: auto;
+}
+
+/* Styles pour les étiquettes d'informations de livraison */
+.info-delivery label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Styles pour la ligne de séparation des informations de livraison */
+.info-delivery hr {
+    height: 447px;
+    width: 2px;
+    margin: 20px 10px 16px 10px;
+}
+
+/* Styles pour les titres h2 des formulaires d'information et de livraison */
+
+.info-delivery h2 {
+    margin-top: 20px;
+}
+
+/* Styles pour les informations */
+.info {
+    margin-left: 0;
+}
+
+/* Styles pour la livraison */
+.delivery {
+    margin-right: 0;
+}
+
+/* Styles pour les éléments de formulaire Contact Form 7 */
+.wpcf7 form > div, .wpcf7 form > p {
+    margin-bottom: 0;
+}
+
+/* Styles pour les étiquettes de texte */
+label #text {
+    line-height: 24px;
+    font-size: 20px;
+    padding: 1px 0;
+}
+
+/* Styles pour les boutons plus/moins */
+.wpcf7 input[type="number"]::-webkit-inner-spin-button, .wpcf7 input[type="number"] {
+    -webkit-appearance: none;
+}
+
+/* Styles pour le conteneur des boutons plus/moins */
+.plus-minus {
+    display: flex;
+    height: 56px;
+    padding: 0;
+    flex-direction: column;
+    position: relative;
+    right: 5.5px;
+}
+
+/* Styles pour les éléments des boutons plus/moins */
+.plus-minus span {
+    margin: 0;
+    height: 28px;
+    line-height: 0;
+}
+
+/* Styles pour les champs de texte des boutons plus/moins */
+.plus-minus input[type=text] {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 10px;
+    height: 28px;
+    margin: 0;
+    width: 31px;
+    background-color: #DC9F96;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0));
+}
+
+/* Styles pour les articles dans le conteneur des vignettes de commande */
+.vignettes_container_commande article {
+    width: 193px;
+}
+
+/* Styles pour le bouton plus dans les boutons plus/moins */
+.plus-minus .plus {
+    border-radius: 0 5px 0 0;
+    border: 0.5px solid #DC9F96;
+    border-bottom: 0.5px solid #ffffff;
+}
+
+/* Styles pour le bouton moins dans les boutons plus/moins */
+.plus-minus .minus {
+    border-radius: 0 0 5px 0;
+    border: 0.5px solid #DC9F96;
+    border-top: 0.5px solid #ffffff;
+}
+
+/* Media Queries pour la mise en page responsive */
+
+@media (min-width: 320px) {
+    /* Styles pour les écrans de petite taille */
+    .hook-admin {
+        padding-left: 30px;
+    }
+    .img-1 {
+        max-width: 100%;
+        height: auto;
+    }
+    .vignettes_container_commande {
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* Styles pour les écrans de taille moyenne */
+    .hook-admin {
+        padding-left: 30px;
+    }
+    .img-1 {
+        max-width: 100%;
+        height: auto;
+    }
+    .vignettes_container_commande {
+        align-items: center;
+    }
+    .meet_us_columns_container {
+        padding-top: 0;
+    }
+    .entry-content > .wp-block-columns {
+        padding-top: 0;
+    }
+    .team-banner {
+        position: relative;
+        bottom: 150px;
+    }
+    .team-banner h4 {
+        padding-top: 60px;
+    }
+    .position-branch-team {
+        bottom: 0;
+        width: 40%;
+        margin-left: 290px;
+        margin-top: 50px;
+    }
+    .contact-us-position {
+        position: relative;
+        bottom: 150px;
+    }
+}
+
+@media (max-width: 544px) {
+    /* Styles pour les écrans de petite taille (max-width: 544px) */
+    .ast-separate-container #content .ast-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .separate-container .entry-content[ast-blocks-layout] > .alignwide {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wp-block-columns .wp-block-column:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Styles pour les écrans de grande taille */
+    .hook-admin {
+        padding-left: 30px;
+    }
+    .img-1 {
+        width: 668px;
+        height: 589px;
+    }
+    .footer-banner {
+        margin-left: 0;
+    }
+    .footer-banner img {
+        margin-top: -5px;
+    }
+    .meet_us_columns_container {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 781px) {
+    /* Styles pour les écrans de petite taille (max-width: 781px) */
+    .admin-bar #page {
+        min-height: calc(100vh - 46px);
+    }
+    .meet_us_text_container h1 {
+        margin-top: 0;
+    }
+    .opinions-text {
+        padding-right: 0;
+        padding-top: 15px;
+    }
+    .opinions-cards {
+        align-items: center;
+    }
+    .accueil_container_opinions {
+        padding-left: 0;
+    }
+    .meet_us_flower {
+        width: 80%;
+    }
+    .form-contact-us {
+        max-height: 550px;
+    }
+    .contact-us-position form {
+        /*margin-top: 145px;*/
+    }
+}
+
+@media (min-width: 782px) {
+    /* Styles pour les écrans de grande taille */
+    .meet_us_columns_container {
+        padding-top: 55px;
+    }
+}
+
+@media (max-width: 921px){
+    .ast-separate-container #primary, .ast-separate-container #secondary {
+        padding: 0 0;
+    }
+}
+
+@media (min-width: 993px){
+    .ast-separate-container #primary, .ast-separate-container.ast-left-sidebar #primary, .ast-separate-container.ast-right-sidebar #primary {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Styles pour les écrans de taille moyenne (max-width: 1200px) */
+    .hook-admin {
+        padding-left: 30px;
+    }
+    .img-1 {
+        max-width: 668px;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    [ast-blocks-layout] .wp-block-separator, .banner-commande hr {
+        margin: 0 20px;
+    }
+
+    .info-delivery hr {
+        height: 2px;
+        width: 100%;
+        margin: 20px 10px 0 10px;
+        background-color: #fff;
+    }
+    .info-delivery .info, .info-delivery .delivery  {
+        justify-content: center;
+        margin: auto;
+    }
+    .info-delivery {
+        flex-wrap: wrap;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    .wpcf7 form > div, .wpcf7 form > p {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .ast-container div main article {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .ast-separate-container .ast-article-single:not(.ast-related-post) {
+        background-color: #ECE2DA;
+        padding: 0;
+    }
+    .ast-separate-container .entry-content > .alignfull:not(.footer-banner), .ast-separate-container .entry-content[ast-blocks-layout] > .alignwide, .ast-plain-container .entry-content[ast-blocks-layout] > .alignwide, .ast-plain-container .entry-content .alignfull {
+        margin-left: 0 ;
+        margin-right: 0;
+    }
+    .wpcf7 .submit-contact-us {
+        bottom: 100px;
+    }
+    .form-contact-us {
+        max-height: 700px;
+    }
+    .contact-us-position form {
+        /*margin-top: 145px;*/
+    }
+    .position-branch-team {
+        bottom: 0;
+        width: 30%;
+        margin-left: 760px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Styles pour les écrans de grande taille (min-width: 1200px) */
+    .meet_us_flower {
+        position: relative;
+        bottom: 43px;
+    }
+}

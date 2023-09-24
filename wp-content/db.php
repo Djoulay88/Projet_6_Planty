@@ -1,0 +1,1 @@
+D:/Développeur WordPress/Projet 6/Préparation soutenance/Planty/wp-content/plugins/query-monitor/wp-content/db.php
