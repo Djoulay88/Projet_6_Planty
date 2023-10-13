@@ -70,10 +70,43 @@
         flex-direction: row;
         justify-content: center;
         padding-bottom: 0;
-        width: 825px;
+        width: fit-content;
     }
-    position-branch-team{
+    .position-branch-team{
         max-width: 191px;
-        height: 219px;
-        
+        height: auto;
+        position: relative;
+        left: 600px;
+        margin-bottom: -100px;
+        bottom: 100px;
+    }
+    #banner-team {
+        background-image: url(../../../uploads/2023/10/Rectangle-6.png);
+        object-position: 50% 0%;
+    }
+    
+    .team-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .team-banner h2 {
+        margin-top: 125px
+    }
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 820px;
+        justify-content: space-between;
+    }
+    .team-container h2{
+        padding-top: 150px;
+    }
+
+    .team-card {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
