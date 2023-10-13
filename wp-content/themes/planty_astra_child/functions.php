@@ -8,9 +8,11 @@ wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     // Chargement du css/theme.css pour nos personnalisations
 wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
     // Chargement du css/responsive.css pour les différentes tailles d'écran
-wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/responsive.css', array(), filemtime(get_stylesheet_directory() . '/css/responsive.css'));
+wp_enqueue_style('responsive', get_stylesheet_directory_uri() . '/css/responsive.css', array(), filemtime(get_stylesheet_directory() . '/css/responsive.css'));
     // Chargement du css/shortcodes/vignette-saveur.css pour les shortcodes vignette saveur
 wp_enqueue_style('vignette-saveur-shortcode', get_stylesheet_directory_uri() . '/css/shortcodes/vignette-saveur.css', array(), filemtime(get_stylesheet_directory() . '/css/shortcodes/vignette-saveur.css'));
+    // Chargement du css/formulaires.css pour les personnalisations des formulaires
+    wp_enqueue_style('formulaires', get_stylesheet_directory_uri() . '/css/formulaires.css', array(), filemtime(get_stylesheet_directory() . '/css//formulaires.css'));
 }
 
 

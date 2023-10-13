@@ -1,0 +1,116 @@
+/* Responsive 
+1 - Classes globales
+2 - Accueil
+3 - Nous rencontrer
+4 - Commander
+*/
+
+/****************** 1 - Classes globales ******************/
+@media (max-width: 1200px){
+    .ast-container,.ast-container-fluid {
+        padding: 0;
+    }
+    .full-width {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #post-7, #post-37, #post-40{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ast-separate-container .entry-content > .alignfull,.ast-separate-container .entry-content[ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content[ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content .alignfull {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    main article {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 992px){
+    .opinion-text{
+        padding-right: 5px;
+    }
+    .ast-separate-container #primary {
+        margin:0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 921px){
+    .ast-separate-container .ast-article-single:not(.ast-related-post){
+        background-color: #ece2da;
+    }
+    h1,.entry-content h1 {
+        font-size: 38px;
+    }
+
+    h2,.entry-content h2 {
+        font-size: 30px;
+    }
+
+    h3,.entry-content h3 {
+        font-size: 26px;
+    }
+    #menu-item-85, #menu-item-86, .hook-admin {
+        font-size: 18px;
+    }
+    .hook-admin {
+        padding-left: 30px;
+    }
+    #menu-item-86 a {
+        background-color: #dc9f96;
+        color: white;
+    }
+}
+@media (max-width: 544px){
+    .ast-separate-container #content .ast-container {
+        padding: 0;
+    }
+    h1,.entry-content h1 {
+        font-size: 26px;
+    }
+
+    h2,.entry-content h2 {
+        font-size: 22px;
+    }
+
+    h3,.entry-content h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px){
+    .ast-separate-container #content .ast-container {
+        padding: 0;
+    }
+    h1,.entry-content h1 {
+        font-size: 24px;
+    }
+
+    h2,.entry-content h2 {
+        font-size: 22px;
+    }
+
+    h3,.entry-content h3 {
+        font-size: 20px;
+    }
+}
+
+/****************** 2 - Accueil ******************/
+@media (max-width: 1200px){
+    .opinion-text{
+        padding-right: 0;
+    }
+}
+
+/****************** 3 - Nous rencontrer ******************/

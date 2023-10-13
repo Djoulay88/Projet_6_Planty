@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.3.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-09-04 09:22:09+0000\n"
+"PO-Revision-Date: 2023-09-26 13:43:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"X-Generator: GlotPress/4.0.0-alpha.9\n"
 "Language: fr\n"
 "Project-Id-Version: WordPress - 6.3.x - Development\n"
 
@@ -304,7 +304,7 @@ msgstr "Afficher une image pour représenter ce site. Mettez à jour ce bloc et 
 #: wp-includes/blocks/post-title/block.json
 msgctxt "block title"
 msgid "Title"
-msgstr "Titre"
+msgstr "Titre de publication"
 
 #: wp-includes/blocks/post-excerpt/block.json
 msgctxt "block title"
@@ -863,23 +863,23 @@ msgstr "Veuillez vérifier que l’extension PHP %s est installée et activée."
 msgid "When using the %1$s constant, make sure to set these globals to an array: %2$s."
 msgstr "À l‘utilisation de la constante %1$s, s‘assurer de définir ces valeurs globales dans un tableau : %2$s."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:2195
+#: wp-includes/html-api/class-wp-html-tag-processor.php:2282
 msgid "The query argument must be an array or a tag name."
 msgstr "L‘argument de la requête doit être un tableau ou une balise."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1891
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1967
 msgid "Invalid attribute name."
 msgstr "Nom d’attribut invalide."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1544
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1620
 msgid "Too many calls to seek() - this can lead to performance issues."
 msgstr "Trop d’appels à la fonction seek(). Cela peut conduire à des problèmes de performances."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1535
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1611
 msgid "Unknown bookmark name."
 msgstr "Nom de marque-page inconnu."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:679
+#: wp-includes/html-api/class-wp-html-tag-processor.php:717
 msgid "Too many bookmarks: cannot create any more."
 msgstr "Nombre maximal de signets atteint : impossible d’en créer de nouveaux"
 
@@ -3018,7 +3018,7 @@ msgstr "Afficher une icône pointant vers un profil de réseau social ou un site
 #: wp-includes/blocks/site-title/block.json
 msgctxt "block title"
 msgid "Site Title"
-msgstr "Titre du Site"
+msgstr "Titre du site"
 
 #: wp-includes/blocks/site-tagline/block.json
 msgctxt "block keyword"

@@ -1,0 +1,216 @@
+/* Styles pour le conteneur des vignettes de commande */
+.vignettes_container_commande {
+    display: flex;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Styles pour le conteneur du nombre de fruits */
+  .nombre-fruit-container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+  }
+  
+  /* Styles pour les boutons du nombre de fruits */
+  .fruit-number-button {
+    width: auto;
+    padding: 0;
+    width: 100px;
+  }
+  
+  /* Styles pour le formulaire de contact */
+  .form-contact-us div {
+    /* height: 700px; */
+  }
+  
+  /* Styles pour la ligne de séparation */
+  hr {
+    margin: 20px auto;
+    height: 2.0px;
+    background-color: #fff;
+  }
+  
+  /* Styles pour les champs de texte et de courriel */
+  input[type="text"], input[type="email"] {
+    height: 71px;
+    margin: 4px 0;
+    background-color: #fff;
+  }
+  
+  /* Styles pour les champs de texte, de courriel et de zone de texte */
+  input[type="text"], input[type="email"], textarea {
+    background-color: #fff;
+    color: #000;
+    max-height: 237px;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.16));
+    border-radius: 7px;
+    justify-items: center;
+  }
+  
+  /* Styles pour le bouton de soumission du formulaire */
+  input[type="submit"] {
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+    height: 56px;
+  }
+  
+  /* Styles pour le bouton de soumission du formulaire Contact Form 7 */
+  .wpcf7 .submit-contact-us {
+    margin-top: -20px;
+    margin-bottom: 60px;
+    width: 198px;
+    height: 56px;
+  }
+  
+  /* Styles pour l'étiquette du formulaire Contact Form 7 */
+  .wpcf7 .label-contact-us p {
+    margin-top: 10px;
+    max-height: 300px;
+  }
+  
+  /* Styles pour le conteneur de formulaire Contact Form 7 */
+  .wpcf7 .label-contact-us {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  /* Styles pour la feuille de houx dans le formulaire Contact Form 7 */
+  .wpcf7 .holly-leaf {
+    position: relative;
+    left: -88px;
+    bottom: 125px;
+    z-index: -1;
+  }
+  
+  /* Styles pour les champs de nombre dans le formulaire Contact Form 7 */
+  .wpcf7 input[type="number"] {
+    width: 51px;
+    font-weight: 400;
+    text-align: center;
+    height: 56px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+  }
+  
+  /* Styles pour le conteneur du formulaire */
+  .form_style {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Styles pour le formulaire, les informations et la livraison */
+  .form_style form, .info, .delivery {
+    margin: auto;
+    max-width: 383px;
+  }
+  
+  /* Styles pour le conteneur d'informations de livraison */
+  .info-delivery {
+    display: flex;
+    padding-bottom: 15px;
+    width: auto;
+  }
+  
+  /* Styles pour les étiquettes d'informations de livraison */
+  .info-delivery label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  /* Styles pour la ligne de séparation des informations de livraison */
+  .info-delivery hr {
+    height: 447px;
+    width: 2px;
+    margin: 20px 10px 16px 10px;
+  }
+  
+  /* Styles pour les titres h2 des formulaires d'information et de livraison */
+  .info-delivery h2 {
+    margin-top: 20px;
+  }
+  
+  /* Styles pour les informations */
+  .info {
+    margin-left: 0;
+  }
+  
+  /* Styles pour la livraison */
+  .delivery {
+    margin-right: 0;
+  }
+  
+  /* Styles pour les éléments de formulaire Contact Form 7 */
+  .wpcf7 form > div, .wpcf7 form > p {
+    margin-bottom: 0;
+  }
+  
+  /* Styles pour les étiquettes de texte */
+  label#text {
+    line-height: 24px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  /* Styles pour les boutons plus/moins */
+  .wpcf7 input[type="number"]::-webkit-inner-spin-button, .wpcf7 input[type="number"] {
+    -webkit-appearance: none;
+  }
+  
+  /* Styles pour le conteneur des boutons plus/moins */
+  .plus-minus {
+    display: flex;
+    height: 56px;
+    padding: 0;
+    flex-direction: column;
+    position: relative;
+    right: 5.5px;
+  }
+  
+  /* Styles pour les éléments des boutons plus/moins */
+  .plus-minus span {
+    margin: 0;
+    height: 28px;
+    line-height: 0;
+  }
+  
+  /* Styles pour les champs de texte des boutons plus/moins */
+  .plus-minus input[type="text"] {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    height: 28px;
+    margin: 0;
+    width: 31px;
+    background-color: #DC9F96;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0));
+  }
+  
+  /* Styles pour les articles dans le conteneur des vignettes de commande */
+  .vignettes_container_commande article {
+    width: 193px;
+  }
+  
+  /* Styles pour le bouton plus dans les boutons plus/moins */
+  .plus-minus .plus {
+    border-radius: 0 5px 0 0;
+    border: 0.5px solid #DC9F96;
+    border-bottom: 0.5px solid #ffffff;
+  }
+  
+  /* Styles pour le bouton moins dans les boutons plus/moins */
+  .plus-minus .minus {
+    border-radius: 0 0 5px 0;
+    border: 0.5px solid #DC9F96;
+    border-top: 0.5px solid #ffffff;
+  }
+  

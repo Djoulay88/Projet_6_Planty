@@ -1,3 +1,4 @@
+/* Vignettes page d'accueil */
 .vignette-saveur-accueil{
     height: 262px;
     width: 393px;
@@ -35,6 +36,8 @@
     line-height: 57.6px;
 }
 
+
+/* Vignettes page Commande */
 .vignette-saveur-commande{
     height: 128px;
     max-width: 193px;
@@ -72,12 +75,23 @@
     padding: 0px;
 }
 
+/* Responsive */
+
+@media (max-width: 821px) {
+    .vignette-saveur-accueil{
+        height: 247px;
+        width: 373px;
+    }
+}
+
+
+
 @media (max-width: 544px) {
-.vignette-saveur-accueil{
-    height: 200px;
-    width: 300px;
-}
-.vignette-saveur-accueil .titre{
-    font-size: 38px;
-}
+    .vignette-saveur-accueil{
+        height: 200px;
+        width: 300px;
+    }
+    .vignette-saveur-accueil .titre{
+        font-size: 38px;
+    }
 }
