@@ -77,12 +77,11 @@
         height: auto;
         position: relative;
         left: 600px;
-        margin-bottom: -100px;
-        bottom: 100px;
+        margin-bottom: -130px;
+        bottom: 130px;
     }
-    #banner-team {
-        background-image: url(../../../uploads/2023/10/Rectangle-6.png);
-        object-position: 50% 0%;
+    .banner-img {
+        margin-bottom:0;
     }
     
     .team-banner {
@@ -90,10 +89,12 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        background-color: white;
     }
 
     .team-banner h2 {
-        margin-top: 125px
+        margin-bottom: 50px;
+        margin-top: 20px;
     }
     .team-container {
         display: flex;
@@ -101,12 +102,24 @@
         width: 820px;
         justify-content: space-between;
     }
-    .team-container h2{
-        padding-top: 150px;
-    }
 
     .team-card {
         display:flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .team-card h3, .team-card p {
+
+        margin-bottom: 0px;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .team-card h3 {
+        padding-top : 20px;
+        font-weight : 700;
+    }
+
+    .team-card p {
+        padding-top : 10px;
     }
