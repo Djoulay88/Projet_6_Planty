@@ -1,116 +1,263 @@
 /* Responsive 
 1 - Classes globales
-2 - Accueil
-3 - Nous rencontrer
-4 - Commander
+2 - Vignettes-saveur
+3 - Formulaires
+4 - Accueil
+5 - Nous rencontrer
+6 - Commander
 */
 
 /****************** 1 - Classes globales ******************/
-@media (max-width: 1200px){
-    .ast-container,.ast-container-fluid {
+
+    @media (max-width: 1200px){
+        .ast-container,.ast-container-fluid {
+            padding: 0;
+        }
+
+        .full-width {
+            width: 100%;
+            max-width: 1200px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #post-7, #post-37, #post-40{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .ast-separate-container .entry-content > .alignfull,.ast-separate-container .entry-content[ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content[ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content .alignfull {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        main article {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media (max-width: 992px){
+        .opinion-text{
+            padding-right: 5px;
+        }
+
+        .ast-separate-container #primary {
+            margin:0;
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 921px){
+        .ast-separate-container .ast-article-single:not(.ast-related-post){
+            background-color: #ece2da;
+        }
+        h1,.entry-content h1 {
+            font-size: 38px;
+        }
+
+        h2,.entry-content h2 {
+            font-size: 30px;
+        }
+
+        h3,.entry-content h3 {
+            font-size: 26px;
+        }
+        #menu-item-85, #menu-item-86, .hook-admin {
+            font-size: 18px;
+        }
+        .hook-admin {
+            padding-left: 30px;
+        }
+        #menu-item-86 a {
+            background-color: #dc9f96;
+            color: white;
+        }
+    }
+    @media (max-width: 544px){
+        .ast-separate-container #content .ast-container {
+            padding: 0;
+        }
+
+        h1,.entry-content h1 {
+            font-size: 26px;
+        }
+
+        h2,.entry-content h2 {
+            font-size: 22px;
+        }
+
+        h3,.entry-content h3 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 390px){
+        .ast-separate-container #content .ast-container {
+            padding: 0;
+        }
+
+        h1,.entry-content h1 {
+            font-size: 23px;
+        }
+
+        h2,.entry-content h2 {
+            font-size: 21px;
+        }
+
+        h3,.entry-content h3 {
+            font-size: 19px;
+        }
+    }
+
+/****************** 2 - Vignettes-saveur ******************/
+
+    @media (max-width: 851px) {
+        .vignette-saveur-accueil{
+            height: 247px;
+            width: 373px;
+        }
+
+        .vignette-saveur-commande{
+            height: 193px;
+            width: 280px;
+        }
+
+        .vignette-saveur-commande .titre{
+            font-size: 36px;
+            line-height: 40px;
+        }
+    }
+
+    @media (max-width: 544px) {
+        .vignette-saveur-accueil{
+            height: 200px;
+            width: 300px;
+        }
+
+        .vignette-saveur-accueil .titre{
+            font-size: 38px;
+        }
+    }
+
+/****************** 3 - Formulaires ******************/
+
+    @media (max-width: 1346px) {
+        .info-delivery {
+            gap: 0 20px;
+            justify-content: center;
+        }
+
+        .info, .delivery {
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 859px) {
+        .info-delivery hr {
+            height: 2px;
+            width: 383px;
+            margin: 20px 40px 0 40px;
+        }
+
+        .info-delivery h2 {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 821px) {
+        .vignettes_container_commande{
+            gap: 0 20px;
+            padding-left: auto;
+            padding-right: auto;
+        }
+    }
+
+    @media (max-width: 645px) {
+        .vignettes_container_commande{
+            gap: 0 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }	
+
+    @media (max-width: 545px) {
+        .info-delivery h2 {
+            margin-top: 0;
+        }
+
+        .info-delivery hr {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 485px) {	
+        .vignettes_container_commande {
+            width: 280px;
+            margin: auto;
+        }
+    }
+
+/****************** 4 - Accueil ******************/
+
+    @media (max-width: 1200px){
+        .opinion-text{
+            padding-right: 0;
+        }
+    }
+
+/****************** 5 - Nous rencontrer ******************/
+
+    @media (max-width: 1315px){
+        .position-branch-team {
+            left: 0;
+            bottom: 0;
+            margin: 20px 40px 0 40px;
+            width: 33%;
+        }
+    }
+
+    @media (max-width: 390px){
+        .team-card {
+            padding: 20px 20px;
+        }
+
+        #post-40 .meet_us_columns_container{
+            padding: 0px 10px;
+        }
+
+        #post-40 .meet_us_columns_container figure {
+            width: 66%;
+            height: auto;
+        }
+
+        #post-40 .meet_us_columns_container .meet_us_flower_height{
+            margin-bottom: 0;
+        }
+    }
+
+/****************** 6 - Commander ******************/
+
+    @media (max-width: 1031px) {
+        .commande-h2-top {
+        text-align: center;
+        }
+    }
+
+    @media (max-width: 1420px){
+        .display-column {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1420px) {
+        #post-37 .banner-commande-columns {
         padding: 0;
+        margin: auto;
+        }
     }
-    .full-width {
-        width: 100%;
-        max-width: 1200px;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #post-7, #post-37, #post-40{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .ast-separate-container .entry-content > .alignfull,.ast-separate-container .entry-content[ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content[ast-blocks-layout] > .alignwide,.ast-plain-container .entry-content .alignfull {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-
-    }
-    main article {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-@media (max-width: 992px){
-    .opinion-text{
-        padding-right: 5px;
-    }
-    .ast-separate-container #primary {
-        margin:0;
-        padding: 0;
-    }
-}
-
-@media (max-width: 921px){
-    .ast-separate-container .ast-article-single:not(.ast-related-post){
-        background-color: #ece2da;
-    }
-    h1,.entry-content h1 {
-        font-size: 38px;
-    }
-
-    h2,.entry-content h2 {
-        font-size: 30px;
-    }
-
-    h3,.entry-content h3 {
-        font-size: 26px;
-    }
-    #menu-item-85, #menu-item-86, .hook-admin {
-        font-size: 18px;
-    }
-    .hook-admin {
-        padding-left: 30px;
-    }
-    #menu-item-86 a {
-        background-color: #dc9f96;
-        color: white;
-    }
-}
-@media (max-width: 544px){
-    .ast-separate-container #content .ast-container {
-        padding: 0;
-    }
-    h1,.entry-content h1 {
-        font-size: 26px;
-    }
-
-    h2,.entry-content h2 {
-        font-size: 22px;
-    }
-
-    h3,.entry-content h3 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 390px){
-    .ast-separate-container #content .ast-container {
-        padding: 0;
-    }
-    h1,.entry-content h1 {
-        font-size: 24px;
-    }
-
-    h2,.entry-content h2 {
-        font-size: 22px;
-    }
-
-    h3,.entry-content h3 {
-        font-size: 20px;
-    }
-}
-
-/****************** 2 - Accueil ******************/
-@media (max-width: 1200px){
-    .opinion-text{
-        padding-right: 0;
-    }
-}
-
-/****************** 3 - Nous rencontrer ******************/

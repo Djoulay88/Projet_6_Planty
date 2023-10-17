@@ -11,6 +11,11 @@
 @import url(
 'https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
+#page, main, footer {
+    max-width: 1440px;
+    margin:auto;
+}
+
 .ast-separate-container #primary {
     margin:0;
 }
@@ -19,7 +24,7 @@
 #post-7, #post-37, #post-40 {
     padding:0;
     width: 100%;
-    margin-bottom: -1px;
+    margin-bottom: 0px;
 }
 
 .ast-container {
@@ -32,6 +37,10 @@
     padding-right: 20px;
 }
 
+header {
+    height: 60px;
+}
+
 /****************** 2 - Accueil ******************/
     .img-1 {
         width: 48.33%;
@@ -40,7 +49,6 @@
     .footer-banner {
         margin-top: 0;
         position: relative;
-        top: -1px;
     }
 
     .full-width{
@@ -72,11 +80,13 @@
         padding-bottom: 0;
         width: fit-content;
     }
+
     .position-branch-team{
         max-width: 191px;
+
         height: auto;
         position: relative;
-        left: 600px;
+        left: 570px;
         margin-bottom: -130px;
         bottom: 130px;
     }
@@ -88,25 +98,28 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+        width: 100%;
         background-color: white;
     }
 
     .team-banner h2 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         margin-top: 20px;
     }
     .team-container {
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        width: 820px;
-        justify-content: space-between;
+        max-width: 981px;
+        justify-content: center;
+        margin: 0 20px;
     }
 
     .team-card {
         display:flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px 80px;
     }
 
     .team-card h3, .team-card p {
@@ -122,4 +135,19 @@
 
     .team-card p {
         padding-top : 10px;
+    }
+
+/****************** 4 - Commander ******************/
+    .banner-commande {
+        max-width: 860px;
+        padding: 20px 10px 25px 10px;
+    }
+
+    .banner-commande hr {
+        padding: 0;
+    }
+
+    .banner-commande-columns{
+        max-width: 860px;
+        margin:auto 0 auto 30px;
     }
