@@ -149,65 +149,7 @@
         }
     }
 
-/****************** 3 - Formulaires ******************/
-
-    @media (max-width: 1346px) {
-        .info-delivery {
-            gap: 0 20px;
-            justify-content: center;
-        }
-
-        .info, .delivery {
-            margin: auto;
-        }
-    }
-
-    @media (max-width: 859px) {
-        .info-delivery hr {
-            height: 2px;
-            width: 383px;
-            margin: 20px 40px 0 40px;
-        }
-
-        .info-delivery h2 {
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 821px) {
-        .vignettes_container_commande{
-            gap: 0 20px;
-            padding-left: auto;
-            padding-right: auto;
-        }
-    }
-
-    @media (max-width: 645px) {
-        .vignettes_container_commande{
-            gap: 0 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }	
-
-    @media (max-width: 545px) {
-        .info-delivery h2 {
-            margin-top: 0;
-        }
-
-        .info-delivery hr {
-            margin-bottom: 20px;
-        }
-    }
-
-    @media (max-width: 485px) {	
-        .vignettes_container_commande {
-            width: 280px;
-            margin: auto;
-        }
-    }
-
-/****************** 4 - Accueil ******************/
+/****************** 3 - Accueil ******************/
 
     @media (max-width: 1420px){
         .team-container {
@@ -222,7 +164,7 @@
         }
     }
 
-/****************** 5 - Nous rencontrer ******************/
+/****************** 4 - Nous rencontrer ******************/
 
     @media (max-width: 1315px) {
         .position-branch-team {
@@ -249,7 +191,7 @@
         }
     }
 
-/****************** 6 - Commander ******************/
+/****************** 5 - Commander ******************/
 
     @media (max-width: 1031px) {
         .commande-h2-top {
