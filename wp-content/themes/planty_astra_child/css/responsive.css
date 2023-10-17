@@ -118,9 +118,13 @@
 /****************** 2 - Vignettes-saveur ******************/
 
     @media (max-width: 851px) {
-        .vignette-saveur-accueil{
+        .vignettes-accueil-container div{
             height: 247px;
             width: 373px;
+            padding: 10px;
+        }
+        .entry-content[ast-blocks-layout] > .vignettes-accueil-container{
+            gap: 10px;
         }
 
         .vignette-saveur-commande{
@@ -134,13 +138,13 @@
         }
     }
 
-    @media (max-width: 544px) {
-        .vignette-saveur-accueil{
+    @media (max-width: 420px) {
+        .vignettes-accueil-container div{
             height: 200px;
             width: 300px;
         }
 
-        .vignette-saveur-accueil .titre{
+        .vignettes-accueil-container div .titre{
             font-size: 38px;
         }
     }
@@ -205,6 +209,13 @@
 
 /****************** 4 - Accueil ******************/
 
+    @media (max-width: 1420px){
+        .team-container {
+            margin: 0 200px
+        }
+    }
+
+
     @media (max-width: 1200px){
         .opinion-text{
             padding-right: 0;
@@ -213,19 +224,16 @@
 
 /****************** 5 - Nous rencontrer ******************/
 
-    @media (max-width: 1315px){
+    @media (max-width: 1315px) {
         .position-branch-team {
-            left: 0;
-            bottom: 0;
-            margin: 20px 40px 0 40px;
-            width: 33%;
+            right: 30px;
+        }
+        .team-margin {
+            margin-top: 225px;
         }
     }
 
     @media (max-width: 390px){
-        .team-card {
-            padding: 20px 20px;
-        }
 
         #post-40 .meet_us_columns_container{
             padding: 0px 10px;

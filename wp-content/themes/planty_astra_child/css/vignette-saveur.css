@@ -1,0 +1,82 @@
+/* Vignettes saveur
+1 - Accueil
+2 - Commander
+*/
+
+/****************** 1 - Accueil ******************/
+
+    .vignette-saveur-accueil{
+        height: 262px;
+        width: 393px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .vignette-saveur-accueil:before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .vignette-saveur-accueil .titre{
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        font-weight: 800;
+        text-transform: uppercase;
+        word-break: keep-all;
+        line-height: 57.6px;
+    }
+
+/****************** 2 - Commander ******************/
+
+    .vignette-saveur-commande{
+        height: 128px;
+        width: 193px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .vignette-saveur-commande:before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .vignette-saveur-commande .titre{
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 24px;
+        padding: 0px;
+    }
