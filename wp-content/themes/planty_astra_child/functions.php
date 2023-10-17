@@ -15,10 +15,9 @@ wp_enqueue_style('vignette-saveur-shortcode', get_stylesheet_directory_uri() . '
     wp_enqueue_style('formulaires', get_stylesheet_directory_uri() . '/css/formulaires.css', array(), filemtime(get_stylesheet_directory() . '/css//formulaires.css'));
 }
 
-
-
                         /*--------------Shortcodes---------------*/
 
+/* Page d'accueil */
 
     //Ajout du shortcode qui permet d'afficher la vignette saveur de la page d'accueil
 add_shortcode('vignette-saveur-accueil', 'vignette_saveur_accueil_func');
@@ -52,7 +51,9 @@ function vignette_saveur_accueil_func($atts)
     return $output;
 }
 
-    //Ajout du shortcode qui permet d'afficher la vignette saveur de la page d'accueil
+/* Page Commander */
+
+    //Ajout du shortcode qui permet d'afficher la vignette saveur de la page Commander
     add_shortcode('vignette-saveur-commande', 'vignette_saveur_commande_func');
 
     // Création de la structure html du widget
@@ -84,11 +85,9 @@ function vignette_saveur_commande_func($atts)
     return $output;
 }
 
-    // Retrait du spinner du formulaire de commande
+                        /*--------------Hooks---------------*/
 
-add_filter( 'wpcf7_load_js', '__return_false' );
-
-    // Mise en place du hook d'affichage du lien Admin dans le menu
+    /* Header - Hook "Admin" */
 
 function ajouter_lien_si_connecte($items, $args) {
     if (is_user_logged_in() && ($args->theme_location == 'primary' || $args->theme_location == 'mobile_menu')) {
@@ -102,7 +101,7 @@ function ajouter_lien_si_connecte($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'ajouter_lien_si_connecte', 10, 2);
 
-    // Inclure des shortcodes directement dans l'extension Contact Form 7
+    /* Page Commander - Hook "Shortcode pour CF7" */
 
 add_filter( 'wpcf7_form_elements', 'mycustom_wpcf7_form_elements' );
 
@@ -112,15 +111,20 @@ function mycustom_wpcf7_form_elements( $form ) {
     return $form;
 }
 
-/** Erreur constatée grâce Query Monitor
- * 
- * Proper ob_end_flush() for all levels
- *
- * This replaces the WordPress `wp_ob_end_flush_all()` function
- * with a replacement that doesn't cause PHP notices.
- */
+                        /*-------------- Divers ---------------*/
+
+    // Retrait du spinner du formulaire de commande
+
+add_filter( 'wpcf7_load_js', '__return_false' );
+
+    // Erreur constatée grâce Query Monitor
+ 
 remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
 add_action( 'shutdown', function() {
    while ( @ob_end_flush() );
 } );
+
+
+
+
 
