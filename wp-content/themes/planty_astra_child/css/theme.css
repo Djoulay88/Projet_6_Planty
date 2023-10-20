@@ -92,8 +92,9 @@ header {
         right: 40px;
         display: flex;
         justify-content: end;
-        margin-bottom: -220px;
+        margin-bottom: -219px;
         z-index: 5;
+        margin-top: 60px;
     }
     .banner-img {
         margin-bottom:-1px;

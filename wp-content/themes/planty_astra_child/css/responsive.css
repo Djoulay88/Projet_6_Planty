@@ -107,7 +107,7 @@
         }
 
         h2,.entry-content h2 {
-            font-size: 21px;
+            font-size: 23px;
         }
 
         h3,.entry-content h3 {
@@ -189,6 +189,10 @@
         #post-40 .meet_us_columns_container .meet_us_flower_height{
             margin-bottom: 0;
         }
+        contact-us-h2 {
+            padding: 45px 10px;
+        }
+        
     }
 
 /****************** 5 - Commander ******************/

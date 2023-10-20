@@ -25,6 +25,7 @@
         left:0;
         right: 0;
         bottom: 0;
+
     }
 
     .vignette-saveur-accueil .titre{
@@ -39,6 +40,10 @@
         text-transform: uppercase;
         word-break: keep-all;
         line-height: 57.6px;
+    }
+
+    .wp-block-column .vignette-saveur-accueil{
+        min-width: 280px;
     }
 
 /****************** 2 - Commander ******************/
